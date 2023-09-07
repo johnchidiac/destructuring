@@ -47,6 +47,13 @@ let [raindrops, whiskers, ...aFewOfMyFavoriteThings] = [
   console.log(whiskers); // whiskers on kittens
   console.log(aFewOfMyFavoriteThings); // ['Bright copper kettles', 'warm woolen mittens', 'Brown paper packages tied up with strings']
 
+// Array Destructuring 3
+
+  let numbers = [10, 20, 30];
+  [numbers[1], numbers[2]] = [numbers[2], numbers[1]]
+  
+  console.log(numbers) // [10, 30, 20]
+
 // ES5 Assigning Variables to Object Properties
 
 var obj = {
@@ -60,7 +67,7 @@ var obj = {
   var b = obj.numbers.b;
 
 // ES 2015 Refactor
-var {numbers: {a, b}} = obj;
+const {a, b} = obj.numbers;
 
 // Array Swap
 var arr = [1, 2];
